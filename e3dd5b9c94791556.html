@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Electronic Sommelier</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="rectangle">
+        <div class="box avgSize ">
+            <div class="avgColorHead">
+                Бокал
+                <img src="https://williams-oliver.ru/image-preview/00010627073_1_2.jpg" width="150" height="150"><p>Бокал для шампанского</p>
+            </div>
+        </div>
+        <div class="box avgSize ">
+            <div class="avgColorHead">
+                Тип
+                <form>
+                    <p></p>
+                    <input type="radio" name="group" value="Аперитивы" id="Аперитивы">
+                    <label for="Аперитивы">Аперитивы</label><br>
+
+                    <input type="radio" name="group" value="Диджестивы" id="Диджестивы">
+                    <label for="Диджестивы">Диджестивы</label><br>
+
+                    <input type="radio" name="group" value="Горячие" id="Горячие">
+                    <label for="Горячие">Горячие</label><br>
+
+                    <input type="radio" name="group" value="Молочные" id="Молочные">
+                    <label for="Молочные">Молочные</label><br>
+
+                    <input type="radio" name="group" value="Десертные" id="Десертные">
+                    <label for="Десертные">Десертные</label><br>
+
+                    <input type="radio" name="group" value="Слоистые" id="Слоистые">
+                    <label for="Слоистые">Слоистые</label><br>
+
+                    <input type="radio" name="group" value="Дейзи" id="Дейзи">
+                    <label for="Дейзи">Дейзи</label><br>
+
+                </form>
+            </div>
+        </div>
+        <div class="box avgSize ">
+            <div class="avgColorHead">
+                Крепость
+                <form>
+                    <p></p>
+                    <input type="radio" name="group" value="Безалкогольное" id="Безалкогольное">
+                    <label for="Безалкогольное">Безалкогольное</label><br>
+
+                    <input type="radio" name="group" value="Слабоградусные" id="Слабоградусные">
+                    <label for="Слабоградусные">Слабоградусные</label><br>
+
+                    <input type="radio" name="group" value="Полукрепкие" id="Полукрепкие">
+                    <label for="Полукрепкие">Полукрепкие</label><br>
+
+                    <input type="radio" name="group" value="Крепкие" id="Крепкие">
+                    <label for="Крепкие">Крепкие</label><br>
+
+                </form>
+            </div>
+        </div>
+        <div class="box avgSize ">
+            <div class="avgColorHead">
+                Основа
+                <form>
+                    <p></p>
+                    <input type="radio" name="group" value="Абсент" id="Абсент">
+                    <label for="Абсент">Абсент</label><br>
+
+                    <input type="radio" name="group" value="Водка" id="Водка">
+                    <label for="Водка">Водка</label><br>
+
+                    <input type="radio" name="group" value="Джин" id="Джин">
+                    <label for="Джин">Джин</label><br>
+
+                    <input type="radio" name="group" value="Виски" id="Виски">
+                    <label for="Виски">Виски</label><br>
+
+                    <input type="radio" name="group" value="Бренди" id="Бренди">
+                    <label for="Бренди">Бренди</label><br>
+
+                    <input type="radio" name="group" value="Ликер" id="Ликер">
+                    <label for="Ликер">Ликер</label><br>
+
+                    <input type="radio" name="group" value="Кальвадос" id="Кальвадос">
+                    <label for="Кальвадос">Кальвадос</label><br>
+
+                    <input type="radio" name="group" value="Текила" id="Текила">
+                    <label for="Текила">Текила</label><br>
+
+                    <input type="radio" name="group" value="Коньяк" id="Коньяк">
+                    <label for="Коньяк">Коньяк</label><br>
+
+                </form>
+            </div>
+        </div>
+        <div class="box bigSize ">
+            <div class="bigColorHead">
+                Ингридиенты
+                <p></p>
+                <table id="outputTable">
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </table>
+                <div>
+                    <input type="text" id="nameInput" placeholder="Введите ингридиент" required>
+                    <span><input type="text" id="quantityInput" placeholder="Введите кол-во" required></span>
+                    <p><span><button class="addButton" onclick="addData()"> Добавить </button></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="box smallSize ">
+            <div class="smallColorHead">
+                Порции
+            </div>
+        </div>
+        <div class="box smallSize ">
+            <div class="smallColorHead">
+                Время
+            </div>
+        </div>
+        <div class="box smallSize ">
+            <div class="smallColorHead">
+                Сложность
+            </div>
+        </div>
+        <div class="box smallSize ">
+            <div class="smallColorHead">
+                Метод
+            </div>
+        </div>
+        <div class="box avgSize ">
+            <div class="avgColorHead">
+                Украшения
+                <form>
+                    <p></p>
+                    <input type="checkbox" name="group" value="Апельсин на бокале" id="Апельсин на бокале">
+                    <label for="Апельсин на бокале">Апельсин на бокале</label><br>
+
+                    <input type="checkbox" name="group" value="Веточка мяты" id="Веточка мяты">
+                    <label for="Веточка мяты">Веточка мяты</label><br>
+
+                    <input type="checkbox" name="group" value="Взбитые сливки с вишней" id="Взбитые сливки с вишней">
+                    <label for="Взбитые сливки с вишней">Взбитые сливки с вишней</label><br>
+
+                    <input type="checkbox" name="group" value="Виноград на шпажке" id="Виноград на шпажке">
+                    <label for="Виноград на шпажке">Виноград на шпажке</label><br>
+
+                    <input type="checkbox" name="group" value="Вишенка на шпажке" id="Вишенка на шпажке">
+                    <label for="Вишенка на шпажке">Вишенка на шпажке</label><br>
+
+                    <input type="checkbox" name="group" value="Долька мандарина" id="Долька мандарина">
+                    <label for="Долька мандарина">Долька мандарина</label><br>
+
+                </form>
+            </div>
+        </div>
+        <div class="box avgSize ">
+            <div class="avgColorHead">
+                Теги
+                <form>
+                    <p></p>
+                    <input type="checkbox" name="group" value="Овощные" id="Овощные">
+                    <label for="Овощные">Овощные</label><br>
+
+                    <input type="checkbox" name="group" value="Огненные" id="Огненные">
+                    <label for="Огненные">Огненные</label><br>
+
+                    <input type="checkbox" name="group" value="Освежающие" id="Освежающие">
+                    <label for="Освежающие">Освежающие</label><br>
+
+                    <input type="checkbox" name="group" value="Пикантные" id="Пикантные">
+                    <label for="Пикантные">Пикантные</label><br>
+
+                    <input type="checkbox" name="group" value="Пунш" id="Пунш">
+                    <label for="Пунш">Пунш</label><br>
+
+                    <input type="checkbox" name="group" value="С мороженным" id="С мороженным">
+                    <label for="С мороженным">С мороженным</label><br>
+
+                    <input type="checkbox" name="group" value="Сладкие" id="Сладкие">
+                    <label for="Сладкие">Сладкие</label><br>
+
+                    <input type="checkbox" name="group" value="Соленые" id="Соленые">
+                    <label for="Соленые">Соленые</label><br>
+
+                </form>
+            </div>
+        </div>
+        <div class="box bigSize ">
+            <div class="bigColorHead">
+                Описание
+                <div>
+                    <p><input type="text" id="discNameInput" placeholder="Название"></p>
+                    <p><input type="text" id="discAltNameInput" placeholder="Альтеранативные названия через запятую"></p>
+                    <p><textarea id="disc"></textarea></p>
+                </div>
+            </div>
+        </div>
+        <div></div>
+        <div>
+            <button type="reset" class="button resetButton">RESET</button>
+        </div>
+        <div>
+            <button type="submit" class="button submitButton">SUBMIT</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
