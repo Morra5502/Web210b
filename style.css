@@ -1,4 +1,22 @@
-﻿body
-{
-    background:bottom
+﻿body {
+    /*background-color: rgb(4, 30, 62);*/
+}
+
+/*classes*/
+.avgSize {
+    border-style: outset;
+    border-top-width: 20px;
+    width: 100px;
+    height: 150px;
+    border-top-color: rgb(87, 143, 253);
+    border-radius: 10px;
+    padding: 5px;
+}
+.smallSize {
+    width: 100px;
+    height: 70px;
+}
+.bigSize {
+    width: 220px;
+    height: 150px;
 }
